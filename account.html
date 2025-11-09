@@ -343,14 +343,17 @@
     const listElements = document.querySelectorAll(".list__element");
 
     listElements.forEach((el) => {
-      const btn = el.querySelector(".list__btn"); // кнопка внутри текущего элемента
+      const btn = el.querySelector(".list__btn");
       el.addEventListener("click", () => {
-        // сброс всех кнопок
+        const isSelected = btn.src.includes("link-or.svg");
+
         document.querySelectorAll(".list__btn").forEach((b) => {
           b.src = "./assets/link.svg";
         });
-        // подсветка текущей
-        btn.src = "./assets/link-or.svg";
+
+        if (!isSelected) {
+          btn.src = "./assets/link-or.svg";
+        }
       });
     });
 
