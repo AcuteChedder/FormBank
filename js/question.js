@@ -1,9 +1,9 @@
 const nameInput = document.querySelector(".main__input");
 const footerBtn = document.querySelector(".footer__btn");
 const headerBar = document.querySelector(".header__bar");
-const header = document.querySelector(".header")
-const main = document.querySelector(".main")
-const connect = document.querySelector(".connect")
+const header = document.querySelector(".header");
+const main = document.querySelector(".main");
+const connect = document.querySelector(".connect");
 const mainContents = [
   document.querySelector(".main__content"),
   document.querySelector(".main__content-2"),
@@ -54,24 +54,52 @@ const showNextContent = () => {
   } else {
     header.style.display = "none";
     main.style.display = "none";
-    connect.style.display = "flex"
-    lastContent()
+    connect.style.display = "flex";
+    lastContent();
   }
 
   updateProgress();
 };
 
-const conectImg = document.querySelector(".connect-img")
-const conectTitle = document.querySelector(".conntect__block-title")
-const conectDesc = document.querySelector(".connect__block-desc")
+const conectImg = document.querySelector(".connect-img");
+const conectTitle = document.querySelector(".conntect__block-title");
+const conectDesc = document.querySelector(".connect__block-desc");
+const connectBtn = document.querySelector(".connect__btn");
+const loader = document.querySelector(".loader")
 
 const lastContent = () => {
-    setTimeout(() => {
-        conectImg.src = "./assets/link-success.png"
-        conectTitle.innerHTML = 'Link <span class="connect__span">€2800.00</span> Success';
-        conectDesc.textContent = 'Great work, your account is linked up'
-    }, 5000)
-}
+  setTimeout(() => {
+    conectImg.style.display = "block";
+    loader.style.display = "none"
+    conectImg.src = "./assets/link-success.png";
+    conectTitle.innerHTML =
+      'Link <span class="connect__span">€2800.00</span> Success';
+    conectDesc.textContent = "Great work, your account is linked up";
+    connectBtn.style.display = "block";
+  }, 5000);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const frames = ["Dot.svg", "Dot-1.svg", "Dot-2.svg", "Dot-3.svg", "Dot-4.svg"];
+
+  const orangePoints = document.querySelectorAll(".orange__point");
+  const purplePoints = document.querySelectorAll(".purple__point");
+
+  let offset = 0
+
+  setInterval(() => {
+    orangePoints.forEach((point, index) => {
+      const frameIndex = (index + offset) % frames.length;
+      point.src = `./assets/orange/${frames[frameIndex]}`;
+    })
+    purplePoints.forEach((point, index) => {
+      const frameIndex = (index + offset) % frames.length;
+      point.src = `./assets/purple/${frames[frameIndex]}`;
+    })
+
+    offset = (offset + 1) % frames.length;
+  }, 100);
+});
 
 footerBtn.addEventListener("click", showNextContent);
 

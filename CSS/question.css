@@ -366,7 +366,7 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    
+    margin-inline: 20px;
     margin-top: 70px;
     height: calc(100vh - 70px);
 }
@@ -374,6 +374,10 @@ body {
 .connect__title {
     font-size: 16px;
     text-align: center;
+}
+
+.connect-img {
+  display: none;
 }
 
 .connect__block {
@@ -402,4 +406,47 @@ body {
 .connect__span {
     color: #FA6C12;
     font-weight: 700;
+}
+
+.connect__btn {
+  display: none;
+  padding-block: 20px;
+  border: none;
+  border-radius: 14px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 31, 1) 0%,
+    rgba(255, 119, 215, 1) 100%
+  );
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loader__points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.loader__points-or {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loader__points-pur {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
