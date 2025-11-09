@@ -1,5 +1,6 @@
 const nameInput = document.querySelector(".main__input");
 const footerBtn = document.querySelector(".footer__btn");
+const footerBtn2 = document.querySelector(".footer__btn-not");
 const headerBar = document.querySelector(".header__bar");
 const header = document.querySelector(".header");
 const main = document.querySelector(".main");
@@ -48,6 +49,12 @@ const showNextContent = () => {
   if (currentIndex < mainContents.length) {
     mainContents[currentIndex].style.display = "block";
 
+    if (currentIndex === mainContents.length - 4) {
+      footerBtn2.style.display = "block";
+    } else {
+      footerBtn2.style.display = "none";
+    }
+
     if (currentIndex === mainContents.length - 1) {
       footerBtn.textContent = "Finish & Continue";
     }
@@ -65,12 +72,12 @@ const conectImg = document.querySelector(".connect-img");
 const conectTitle = document.querySelector(".conntect__block-title");
 const conectDesc = document.querySelector(".connect__block-desc");
 const connectBtn = document.querySelector(".connect__btn");
-const loader = document.querySelector(".loader")
+const loader = document.querySelector(".loader");
 
 const lastContent = () => {
   setTimeout(() => {
     conectImg.style.display = "block";
-    loader.style.display = "none"
+    loader.style.display = "none";
     conectImg.src = "./assets/link-success.png";
     conectTitle.innerHTML =
       'Link <span class="connect__span">€2800.00</span> Success';
@@ -80,28 +87,36 @@ const lastContent = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const frames = ["Dot.svg", "Dot-1.svg", "Dot-2.svg", "Dot-3.svg", "Dot-4.svg"];
+  const frames = [
+    "Dot.svg",
+    "Dot-1.svg",
+    "Dot-2.svg",
+    "Dot-3.svg",
+    "Dot-4.svg",
+  ];
 
   const orangePoints = document.querySelectorAll(".orange__point");
   const purplePoints = document.querySelectorAll(".purple__point");
 
-  let offset = 0
+  let offset = 0;
 
   setInterval(() => {
     orangePoints.forEach((point, index) => {
       const frameIndex = (index + offset) % frames.length;
       point.src = `./assets/orange/${frames[frameIndex]}`;
-    })
+    });
     purplePoints.forEach((point, index) => {
       const frameIndex = (index + offset) % frames.length;
       point.src = `./assets/purple/${frames[frameIndex]}`;
-    })
+    });
 
     offset = (offset + 1) % frames.length;
   }, 100);
 });
 
 footerBtn.addEventListener("click", showNextContent);
+
+footerBtn2.addEventListener("click", showNextContent)
 
 const backBtn = document.querySelector(".header__back");
 
@@ -113,6 +128,12 @@ backBtn.addEventListener("click", () => {
   currentIndex--;
 
   mainContents[currentIndex].style.display = "block";
+
+  if (currentIndex === mainContents.length - 4) {
+      footerBtn2.style.display = "block";
+    } else {
+      footerBtn2.style.display = "none";
+    }
 
   if (currentIndex < mainContents.length - 1) {
     footerBtn.textContent = "Next";

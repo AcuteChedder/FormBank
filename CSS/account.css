@@ -21,6 +21,7 @@ body {
 
 .main {
   margin-inline: 16px;
+  margin-bottom: 30px;
 }
 
 .user {
@@ -81,11 +82,7 @@ body {
   font-weight: 500;
   color: #fff;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 118, 31, 1) 0%,
-    rgba(255, 119, 215, 1) 100%
-  );
+  background: linear-gradient(90deg,rgba(255, 119, 218, 1) 21%, rgba(250, 108, 18, 1) 100%);
 }
 
 .balance__update {
@@ -237,10 +234,50 @@ body {
   color: #787878;
 }
 
+.last__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+}
+
 #activeLink {
   cursor: pointer;
 }
 
 .list__btn {
     cursor: pointer;
+}
+
+.loader {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+#loader-2 {
+  padding-block: 40px;
+}
+
+#loader-3 {
+  padding-block: 40px;
+}
+
+.loader__points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.loader__points-or {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loader__points-pur {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
