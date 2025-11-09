@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "DM Sans", sans-serif;
+}
+
+.layout {
+  margin-inline: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 70px;
+}
+
+.header__bar {
+  height: 4px;
+  width: 100%;
+  background-color: #ededed;
+}
+
+.header__back {
+  border: none;
+  background: none;
+}
+
+.header__skip {
+  color: #fa6c12;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 43px - 70px - 50px - 36px);
+}
+
+.main__content {
+  display: block;
+}
+
+.main__content-2 {
+  display: none;
+}
+
+.main__content-3 {
+  display: none;
+}
+
+.main__content-4 {
+  display: none;
+}
+
+.main__content-5 {
+  display: none;
+}
+
+.main__content-6 {
+  display: none;
+}
+
+.main__content-7 {
+  display: none;
+}
+
+.main__page {
+  text-align: center;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.current-page {
+  color: #fa6c12;
+  font-weight: 600;
+}
+
+.main__text {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.main__text-title {
+  font-size: 24px;
+}
+
+.main__text-desc {
+  font-size: 16px;
+  color: #787878;
+  margin-top: 12px;
+}
+
+.main__form {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #dfdfdf;
+  border-radius: 14px;
+  background: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 40px;
+}
+
+.main__form.active {
+  border: 1px solid #fa6c12;
+}
+
+.main__input {
+  padding-block: 16px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer__btn {
+  padding-block: 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 31, 1) 0%,
+    rgba(255, 119, 215, 1) 100%
+  );
+}
+
+.purpose {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.purpose__choose {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.purpose__choose.active {
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      90deg,
+      rgba(255, 118, 31, 1) 0%,
+      rgba(255, 119, 215, 1) 100%
+    );
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.amout__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.amount__desc {
+  color: #9a9a9a;
+  margin-top: 4px;
+}
+
+.amount__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  background: #fff;
+  border-radius: 14px;
+  margin-top: 16px;
+}
+
+.amount__text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.euro {
+  color: #ff77c2;
+}
+
+.amount__block-plus {
+  cursor: pointer;
+}
+
+.amount__block-minus {
+  cursor: pointer;
+}
+
+.outstanding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.outstanding__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.outstanding__desc {
+  color: #9a9a9a;
+  margin-top: 4px;
+}
+
+.outstanding__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  background: #fff;
+  border-radius: 14px;
+  margin-top: 16px;
+}
+
+.outstanding__text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.euro {
+  color: #ff77c2;
+}
+
+.outstanding__block-plus {
+  cursor: pointer;
+}
+
+.outstanding__block-minus {
+  cursor: pointer;
+}
+
+.outstanding__debt {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.dollar {
+  font-weight: 600;
+  color: #fa6c12;
+}
+
+.outstanding__debt-sum {
+  font-weight: 600;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.category {
+    display: flex;
+    gap: 8px;
+    border: 1px solid #E7E7E7;
+    border-radius: 12px;
+    padding-block: 12px;
+    padding-inline: 14px;
+    cursor: pointer;
+}
+
+
+.monthly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.monthly__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.monthly__desc {
+  color: #9a9a9a;
+  margin-top: 4px;
+}
+
+.monthly__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  background: #fff;
+  border-radius: 14px;
+  margin-top: 16px;
+}
+
+.monthly__text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.euro {
+  color: #ff77c2;
+}
+
+.monthly__block-plus {
+  cursor: pointer;
+}
+
+.monthly__block-minus {
+  cursor: pointer;
+}
+
+.monthly__debt {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.monthly__debt span {
+    font-weight: 700;
+}
+
+.footer__btn {
+    cursor: pointer;
+}
+
+.header__back {
+    cursor: pointer;
+}
+
+.connect {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+
+.connect__title {
+    font-size: 16px;
+    text-align: center;
+}
+
+.connect__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conntect__block-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.connect__block-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.void {
+    height: 4px;
+}
+
+.connect__span {
+    color: #FA6C12;
+    font-weight: 700;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/question.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <button class="header__back">
+          <img src="./assets/back.svg" alt=""  />
+        </button>
+        <div class="header__bar"></div>
+        <p class="header__skip">Skip</p>
+      </div>
+
+      <div class="main">
+        <div class="main__content">
+          <p class="main__page"><span class="current-page">1</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">What your full name?</h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question
+            </p>
+          </div>
+
+          <div class="main__form">
+            <img src="./assets/user.svg" alt="" class="main__input-img" />
+            <input
+              type="text"
+              class="main__input"
+              placeholder="Enter your full name"
+            />
+          </div>
+        </div>
+        <div class="main__content-2">
+          <p class="main__page"><span class="current-page">2</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">What’s your app purpose?</h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question (multiple
+              answer)
+            </p>
+          </div>
+
+          <div class="purpose">
+            <div class="purpose__choose">
+              <p class="purpose__text">I want to control my budget</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I want to save more money</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I want finance AI Companion</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I want to track my expenses</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I want to manage subscription</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I want to build emergency fund</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I just want to try the app</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+          </div>
+        </div>
+        <div class="main__content-3">
+          <p class="main__page"><span class="current-page">3</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">
+              How much money are you making monthly?
+            </h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question
+            </p>
+          </div>
+
+          <div class="amount">
+            <h1 class="amout__title">Monthly Amount</h1>
+            <p class="amount__desc">Please enter your net income amount</p>
+
+            <div class="amount__block">
+              <img src="./assets/minus.svg" alt="" class="amount__block-plus" />
+              <p class="amount__text">
+                <span class="euro">€</span
+                ><span class="amount-sum">10,000</span>
+              </p>
+              <img src="./assets/plus.svg" alt="" class="amount__block-minus" />
+            </div>
+          </div>
+        </div>
+        <div class="main__content-4">
+          <p class="main__page"><span class="current-page">4</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">Do you have any outstanding debt?</h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question
+            </p>
+          </div>
+
+          <div class="outstanding">
+            <div class="outstanding__block">
+              <img
+                src="./assets/minus.svg"
+                alt=""
+                class="outstanding__block-plus"
+              />
+              <p class="outstanding__text">
+                <span class="euro">€</span
+                ><span class="outstanding-sum">1000</span>
+              </p>
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="outstanding__block-minus"
+              />
+            </div>
+            <p class="outstanding__debt">
+              I have an outstanding debt of <span class="dollar">$</span
+              ><span class="outstanding__debt-sum">1,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="main__content-5">
+          <p class="main__page"><span class="current-page">5</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">
+              What categories do you spend the most on?
+            </h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question
+            </p>
+          </div>
+
+          <div class="categories">
+            <div class="category">
+              <img
+                src="./assets/icons/shopping-cart.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Grocery</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/music-circle.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Entertainment</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/airdrop.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Utility</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/wallet.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Bill</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/calendar.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Rent</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/archive-book.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Subscription</p>
+            </div>
+            <div class="category">
+              <img
+                src="./assets/icons/box-2.svg"
+                alt=""
+                class="category__img"
+              />
+              <p class="category__text">Others</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__content-6">
+          <p class="main__page"><span class="current-page">6</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">
+              Do you have a specific financial goal in mind?
+            </h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question (multiple
+              answer)
+            </p>
+          </div>
+
+          <div class="purpose">
+            <div class="purpose__choose">
+              <p class="purpose__text">Pay off debt</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">Grow my money</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">Build or grow savings</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">Home Ownership</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">Reduce Spending</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+            <div class="purpose__choose">
+              <p class="purpose__text">I have Other Goals</p>
+              <img src="./assets/notChoose.svg" alt="" class="purpose__img" />
+            </div>
+          </div>
+        </div>
+        <div class="main__content-7">
+          <p class="main__page"><span class="current-page">7</span> of 7</p>
+
+          <div class="main__text">
+            <h1 class="main__text-title">
+              How many months of expenses can your emergency fund cover?
+            </h1>
+            <p class="main__text-desc">
+              Please give some true answers for following question
+            </p>
+          </div>
+
+          <div class="monthly">
+            <h2 class="monthly__title">Monthly Amount</h2>
+            <div class="monthly__block">
+              <img
+                src="./assets/minus.svg"
+                alt=""
+                class="monthly__block-plus"
+              />
+              <p class="monthly__text">
+                <span class="monthly-sum">12</span>
+              </p>
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="monthly__block-minus"
+              />
+            </div>
+            <p class="monthly__debt">
+              I can cover <span>~12 months</span> of my expenses
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <button class="footer__btn">Next</button>
+      </div>
+
+      <div class="connect">
+        <h1 class="connect__title">Link Up Bank Account</h1>
+
+        <div class="connect__block">
+            <img src="./assets/link.png" alt="" class="connect-img">
+            <h2 class="conntect__block-title">Linking with Masters Card</h2>
+            <p class="connect__block-desc">Please wait a moment...</p>
+        </div>
+
+        <div class="void"></div>
+      </div>
+    </div>
+
+    <script src="./js/question.js"></script>
+  </body>
+</html>
