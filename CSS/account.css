@@ -164,7 +164,7 @@ body {
 
 .link {
   display: none;
-  margin-top: 42px;
+  margin-top: 16px;
   margin-inline: 16px;
   margin-bottom: 20px;
 }
@@ -260,11 +260,11 @@ body {
 }
 
 #loader-2 {
-  padding-block: 42px;
+  padding-block: 45.2px;
 }
 
 #loader-3 {
-  padding-block: 42px;
+  padding-block: 45.2px;
 }
 
 .loader__points {
