@@ -16,12 +16,12 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-inline: 16px;
-  margin-top: 42px;
+  margin-top: 16px;
 }
 
 .main {
   margin-inline: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .user {
@@ -74,7 +74,7 @@ body {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
-  padding-block: 20px;
+  padding-block: 12px;
   border: none;
   border-radius: 14px;
   margin-top: 30px;
@@ -255,12 +255,16 @@ body {
   gap: 16px;
 }
 
+#loader {
+  padding-block: 21px;
+}
+
 #loader-2 {
-  padding-block: 40px;
+  padding-block: 42px;
 }
 
 #loader-3 {
-  padding-block: 40px;
+  padding-block: 42px;
 }
 
 .loader__points {

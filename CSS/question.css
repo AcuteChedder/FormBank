@@ -40,13 +40,19 @@ body {
   font-weight: 500;
 }
 
+
+
 .main {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: calc(100vh - 43px - 70px - 50px - 36px);
-  padding-bottom: 20px;
+  padding-bottom: 16px;
+}
+
+.btn {
+  margin-top: auto;
 }
 
 .main__content {
@@ -431,7 +437,7 @@ body {
 .connect__btn {
   cursor: pointer;
   display: none;
-  padding-block: 20px;
+  padding-block: 12px;
   border: none;
   border-radius: 14px;
   margin-top: 30px;
